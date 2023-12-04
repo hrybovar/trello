@@ -1,0 +1,122 @@
+@import "~bootstrap/scss/bootstrap";
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  outline: none;
+}
+
+body {
+  background-color: rgb(237, 235, 235);
+}
+
+header {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  background-color: rgb(246, 164, 246);
+  height: 80px;
+  border-radius: 20px;
+
+  h1 {
+    color: white;
+    font-size: 60px;
+  }
+
+  time {
+    color: white;
+    font-size: 50px;
+    background-color: rgb(221, 106, 221);
+    height: 55px;
+    width: 130px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 20px;
+  }
+}
+
+#root {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  .column {
+    margin: 20px;
+    width: 600px;
+    height: calc(100vh - 120px);
+    background-color: white;
+    border-radius: 50px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+
+    button {
+      width: 600px;
+      height: 55px;
+      border-radius: 50px;
+      border: none;
+      font-size: 30px;
+      color: white;
+
+    }
+  }
+}
+
+.columnUp {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  background-color: rgb(246, 164, 246);
+  border-radius: 50px;
+  height: 60px;
+
+  p {
+    color: white;
+    font-size: 30px;
+    height: 60px;
+    width: 200px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  #counter {
+    color: white;
+    font-size: 30px;
+    height: 60px;
+    width: 60px;
+    display: flex;
+    justify-content: center;
+    align-self: center;
+  }
+}
+
+#todoUp {
+  background-color: rgb(171, 212, 171);
+}
+
+#inProgressUp {
+  background-color: rgb(203, 201, 201);
+}
+
+#doneUp {
+  background-color: rgb(156, 156, 223);
+}
+
+#add {
+  background-color: rgb(171, 212, 171);
+
+  &:hover {
+    background-color: rgb(34, 218, 34);
+  }
+}
+
+#deleteAll {
+  background-color: rgb(156, 156, 223);
+
+  &:hover {
+    background-color: rgb(76, 76, 228);
+  }
+}
